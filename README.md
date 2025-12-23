@@ -1,62 +1,30 @@
-# The Simpsons & Tom & Jerry Dataset
+# Visual Layer Tutorial Dataset  
+## The Simpsons & Tom & Jerry (Educational Use)
 
-## Overview
+## Purpose
 
-This repository contains a curated dataset of visual media inspired by *The Simpsons* and *Tom & Jerry*. It is intended for **educational and tutorial purposes**, such as testing computer vision workflows, experimenting with object detection, or building Quick Start examples.  
+This repository contains a **small, curated visual dataset** intended **solely for learning and onboarding with Visual Layer**.
 
-**Note:** No copyrighted material from the original shows is included. All images/videos are **created, modified, or sourced from free/open media**.
+The dataset is used in Visual Layer tutorials and quick-start guides to help new users:
+- Create their first dataset
+- Upload and index visual data
+- Explore visual search and object-level investigation
+- Become familiar with Visual Layer workflows before using their own data
 
----
-
-## Contents
-
-The dataset is organized as follows:
-
-dataset/
-├── simpsons/
-│   ├── images/
-│   └── videos/
-└── tom_and_jerry/
-├── images/
-└── videos/
-
-- `images/` — sample frames or artwork  
-- `videos/` — short clips for testing video processing  
+This repository is **not** intended for benchmarking, model training, or real-world intelligence use.
 
 ---
 
-## Example Usage
+## About the Dataset
 
-### Inspect files
+The dataset is inspired by well-known cartoon universes (*The Simpsons* and *Tom & Jerry*) to provide:
+- Familiar, low-stakes visual content
+- Clear visual structure for learning exploration
+- A safe and approachable example for first-time users
 
-```bash
-ls dataset/simpsons/images | head -5
+**No copyrighted material from the original shows is included.**  
+All images and videos are either:
+- Original creations
+- Public-domain or CC0 assets
+- Modified or synthetic media created for educational purposes
 
-Load in Python
-
-from pathlib import Path
-from PIL import Image
-
-dataset_path = Path("dataset/simpsons/images")
-for img_file in dataset_path.glob("*.jpg"):
-    img = Image.open(img_file)
-    img.show()
-    break
-
-Notes
-	•	The dataset is intentionally small for Quick Start/tutorial purposes.
-	•	You can replace the contents with your own images/videos while keeping the same structure.
-
-⸻
-
-License
-
-This dataset is released under the CC0 / Public Domain license for educational and tutorial use only.
-
-Users are responsible for complying with any copyright or trademark laws when substituting real media.
-
-⸻
-
-References
-	•	Inspired by: The Simpsons and Tom & Jerry franchises
-	•	Tutorial use case: Quick Start, computer vision, object detection
